@@ -1,0 +1,90 @@
+/* === CONTAINER === */
+.home-split {
+  height: 100%;
+  display: flex;
+}
+
+/* === LINK WRAPPER === */
+.panel-link {
+  flex: 1;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === PANEL === */
+.panel {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+}
+
+/* HOVER — I TYLKO TO */
+.panel-link:hover .panel {
+  filter: grayscale(0%);
+}
+
+/* === BACKGROUNDS === */
+.left {
+  background: url("../assets/worker.avif") center / cover no-repeat;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    92% 50%,
+    100% 100%,
+    0 100%
+  );
+}
+
+.right {
+  background: url("../assets/zenit.jpg") center / cover no-repeat;
+  clip-path: polygon(
+    8% 0,
+    100% 0,
+    100% 100%,
+    8% 100%,
+    0 50%
+  );
+}
+
+/* === GLASS === */
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 3rem 4rem;
+  border-radius: 16px;
+  color: white;
+  text-align: center;
+
+  transition: transform 0.4s ease;
+}
+
+.panel-link:hover .glass {
+  transform: scale(1.05);
+}
+/**MOBILE**/
+@media (max-width: 768px) {
+  .home-split {
+    height: 100%;              
+    flex-direction: column;    
+  }
+
+  .panel-link {
+    flex: 1;                   
+    display: block;
+  }
+
+  .panel {
+    height: 100%;              
+  }
+  .left,
+  .right {
+    clip-path: none;
+  }
+  .glass {
+    padding: 2rem;
+  }
+}

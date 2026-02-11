@@ -1,0 +1,29 @@
+.offers-page {
+  padding: 3rem 2rem;
+}
+
+.offers-page h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+
+@media (max-width: 1024px) {
+  .offers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .offers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

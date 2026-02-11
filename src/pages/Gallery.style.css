@@ -1,0 +1,88 @@
+/* GRID */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 4rem 2rem;
+}
+
+.gallery-item {
+  cursor: pointer;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* LIGHTBOX */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-content {
+  width: 70vw;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.lightbox-content img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.lightbox-content p {
+  margin-top: 1rem;
+  color: white;
+}
+
+/* STRZAŁKI */
+
+.prev,
+.next {
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1rem;
+  user-select: none;
+}
+
+.prev {
+  left: 5%;
+}
+
+.next {
+  right: 5%;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .lightbox-content {
+    width: 90vw;
+  }
+}

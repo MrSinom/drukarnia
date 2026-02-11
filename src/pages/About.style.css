@@ -1,0 +1,60 @@
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* === ROW === */
+.about-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+/* === REVERSE (zamiana kolumn) === */
+.about-row.reverse {
+  direction: rtl;
+}
+
+.about-row.reverse > * {
+  direction: ltr;
+}
+
+/* === TEXT === */
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* === IMAGE === */
+.about-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* === MOBILE === */
+@media (max-width: 768px) {
+  .about-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-row.reverse {
+    direction: ltr;
+  }
+
+  .about-image img {
+    max-height: 280px;
+  }
+}
