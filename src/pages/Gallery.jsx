@@ -10,6 +10,13 @@ import blackout from "../assets/blackout2.jpg";
 import baner2 from "../assets/baner_frontlight.png";
 import mesh2 from "../assets/folia3.jpg";
 import mono2 from "../assets/siatka3.jpg";     
+import silos from "../assets/silos.jpg";
+import baner3 from "../assets/baner3.jpg";
+import kontener from "../assets/kontener.jpg";  
+import backlite2 from "../assets/backlite.jpg";
+import skarbek from "../assets/skarbek.jpg";
+import biuro from "../assets/biuro.jpg";
+import technology from "../assets/technology.jpg";
 
 const images = [
   { src: baner, title: "Realizacja 1" },
@@ -22,11 +29,13 @@ const images = [
   { src: baner2, title: "Realizacja 8" },
   { src: mesh2, title: "Realizacja 9" },
   { src: mono2, title: "Realizacja 10" },
-  { src: "./assets/silesia3bannery_06.jpg", title: "Realizacja 11" },
-  { src: "./assets/silesia3bannery_06.jpg", title: "Realizacja 12" },
-  { src: "./assets/silesia3bannery_06.jpg", title: "Realizacja 13" },
-  { src: "./assets/silesia3bannery_06.jpg", title: "Realizacja 14" },
-  { src: "./assets/silesia3bannery_06.jpg", title: "Realizacja 15" },
+  { src: baner3, title: "Realizacja 11" },
+  { src: kontener, title: "Realizacja 12" },
+  { src: backlite2, title: "Realizacja 13" },
+  { src: skarbek, title: "Realizacja 14" },
+  { src: biuro, title: "Realizacja 15" },
+  { src: technology, title: "Realizacja 16" },
+  { src: silos, title: "Realizacja 17" },
 ];
 
 function Gallery() {

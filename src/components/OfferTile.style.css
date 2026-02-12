@@ -1,50 +1,83 @@
 .offer-tile {
   position: relative;
-  aspect-ratio: 1 / 1;
+  width: 100%;
+  aspect-ratio: 1 / 1;  
   overflow: hidden;
   border-radius: 16px;
   cursor: pointer;
 }
 
-/* tło */
+
+
 .offer-bg {
   position: absolute;
   inset: 0;
+
   background-image: var(--image-default);
   background-size: cover;
   background-position: center;
+
   filter: grayscale(100%);
   transition: all 0.4s ease;
 }
 
-/* hover zmienia background */
 .offer-tile:hover .offer-bg,
 .offer-tile:focus .offer-bg {
   background-image: var(--image-hover);
   filter: grayscale(0%);
-  transform: scale(1.0);
+  transform: scale(1.05);
 }
 
-/* overlay */
+
 .offer-overlay {
   position: absolute;
   inset: 0;
+
+  display: grid;              
+  place-items: center;
+
+  text-align: center;
+  padding: 1.5rem;
+
   background: rgba(0, 0, 0, 0.6);
   color: white;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  padding: 1.5rem;
-  text-align: center;
 
   opacity: 0.6;
   transition: opacity 0.4s ease;
 }
 
+/* hover/focus overlay */
 .offer-tile:hover .offer-overlay,
 .offer-tile:focus .offer-overlay {
   opacity: 1;
+}
+
+
+
+.offer-content {
+  max-width: 90%;
+}
+
+.offer-content h3 {
+  margin: 0 0 0.6rem 0;
+  font-size: 1.4rem;
+}
+
+.offer-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .offer-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .offer-content p {
+    font-size: 0.9rem;
+  }
 }

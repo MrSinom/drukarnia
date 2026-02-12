@@ -68,22 +68,23 @@
 /**MOBILE**/
 @media (max-width: 768px) {
   .home-split {
-    height: 100%;              
-    flex-direction: column;    
+    height: 100dvh;          
+    flex-direction: column;
   }
 
   .panel-link {
-    flex: 1;                   
-    display: block;
+    flex: 1;                
   }
 
   .panel {
-    height: 100%;              
+    height: 100%;           
   }
+
   .left,
   .right {
-    clip-path: none;
+    clip-path: none;        
   }
+
   .glass {
     padding: 2rem;
   }
