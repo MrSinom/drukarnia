@@ -12,7 +12,7 @@ import mono2 from "../assets/siatka3.jpg";
 import silos from "../assets/silos.jpg";
 import baner3 from "../assets/baner3.jpg";
 import kontener from "../assets/kontener.jpg";  
-import skarbek from "../assets/skarbek.jpg";
+import skarbek from "../assets/skarbek.jpg";      
 import biuro from "../assets/biuro.jpg";
 import technology from "../assets/technology.jpg";
 
@@ -25,7 +25,7 @@ const images = [
   { src: backlite, title: "Realizacja 6" },
   { src: blackout, title: "Realizacja 7" },
   { src: baner2, title: "Realizacja 8" },
-    { src: silos, title: "Realizacja 9" },
+ { src: silos, title: "Realizacja 9" },
   { src: mono2, title: "Realizacja 10" },
   { src: baner3, title: "Realizacja 11" },
   { src: kontener, title: "Realizacja 12" },
