@@ -7,6 +7,7 @@ import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import Preparation from "./pages/Preparation";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +39,7 @@ export default function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/preparation" element={<Preparation />} /> 
       </Routes>
     </main>
 
